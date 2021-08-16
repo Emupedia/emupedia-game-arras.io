@@ -1477,7 +1477,8 @@ var app =
 		}
 		util.submitToLocalStorage('optColors');
 		var a = document.getElementById('optColors').value;
-		color = color[a === '' ? 'normal' : a];
+		//color = color[a === '' ? 'normal' : a];
+		color = color[a];
 		// Other more important stuff
 		var playerNameInput = document.getElementById('playerNameInput');
 		var playerKeyInput = document.getElementById('playerKeyInput');
