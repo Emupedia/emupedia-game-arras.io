@@ -4,6 +4,7 @@
 }
 
 .conceal {
+    display: none;
     -webkit-text-security: disc;
 }
 
