@@ -1415,16 +1415,16 @@ var app =
 								global.finalKillers.push(m[6 + i]);
 							}
 							global.died = true;
-							window.onbeforeunload = function () {
+							/*window.onbeforeunload = function () {
 								return false;
-							};
+							};*/
 						}break;
 					case 'K':
 						{
 							// kicked
-							window.onbeforeunload = function () {
+							/*window.onbeforeunload = function () {
 								return false;
-							};
+							};*/
 						}break;
 					default:
 						throw new Error('Unknown message index.');
@@ -1435,9 +1435,9 @@ var app =
 				socket.open = false;
 				global.disconnected = true;
 				clearInterval(socket.commandCycle);
-				window.onbeforeunload = function () {
+				/*window.onbeforeunload = function () {
 					return false;
-				};
+				};*/
 				console.log('Socket closed.');
 			};
 			// Notify about errors
@@ -1505,9 +1505,9 @@ var app =
 			return moveCompensation.iterate(global.socket.cmd.getMotion());
 		}, 1000 / 30);
 		document.getElementById('gameCanvas').focus();
-		window.onbeforeunload = function () {
+		/*window.onbeforeunload = function () {
 			return true;
-		};
+		};*/
 	}
 
 	// Background clearing
