@@ -2704,7 +2704,7 @@ var app =
 	};
 	exports.pullJSON = function (filename) {
 		var request = new XMLHttpRequest();
-		var url = "/json/" + filename + ".json?v=" + VERSION;
+		var url = "json/" + filename + ".json?v=" + VERSION;
 		// Set up the request
 		console.log("Loading JSON from " + url);
 		request.responseType = 'json';
