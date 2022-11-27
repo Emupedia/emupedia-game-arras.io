@@ -1172,7 +1172,7 @@ var app =
 		// The initialization function (this is returned)
 		return function (port) {
 			//var socket = new WebSocket('ws://' + window.location.hostname + ':' + port);
-			var socket = new WebSocket('wss://diep.emupedia.net/ws/');
+			var socket = new WebSocket('wss://arras.emupedia.net/ws/');
 			// Set up our socket
 			socket.binaryType = 'arraybuffer';
 			socket.open = false;
